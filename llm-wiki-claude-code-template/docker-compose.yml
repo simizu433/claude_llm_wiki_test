@@ -1,0 +1,17 @@
+services:
+  app:
+    build:
+      context: .
+      args:
+        USERNAME: devuser
+        USER_UID: ${UID:-1000}
+        USER_GID: ${GID:-1000}
+    user: devuser
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    volumes:
+      - .:/workspace
+    tty: true
+    stdin_open: true
