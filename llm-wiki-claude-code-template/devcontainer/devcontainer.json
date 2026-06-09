@@ -1,0 +1,16 @@
+{
+  "name": "llm-wiki-claude-code-webfetch",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspace",
+  "remoteUser": "devuser",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "yzhang.markdown-all-in-one",
+        "DavidAnson.vscode-markdownlint",
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  }
+}

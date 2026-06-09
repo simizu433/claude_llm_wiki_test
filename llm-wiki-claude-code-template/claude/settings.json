@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "defaultMode": "acceptEdits",
+    "allow": [],
+    "ask": [
+      "WebFetch(domain:*)"
+    ],
+    "deny": [
+      "Bash(*)",
+      "Read(.env)",
+      "Read(**/.env)",
+      "Read(**/.env.*)",
+      "Read(**/.ssh/**)",
+      "Read(**/.aws/**)",
+      "Read(**/.config/**)",
+      "Read(**/credentials.yml.enc)",
+      "Read(**/master.key)"
+    ]
+  }
+}
